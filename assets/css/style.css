@@ -8,8 +8,17 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'Larsseit-Bold';
+  src: url('Larsseit-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Larsseit';
+  src: url('Larsseit-Thin.otf');
+}
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Larsseit", sans-serif;
   color: #28313A;
 }
 
@@ -24,7 +33,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Larsseit-Bold", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -319,7 +328,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 50px;
 }
 #hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
+  font-family: "Larsseit", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -348,8 +357,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (max-width: 768px) {
-  #hero .carousel-container {
-  }
   #hero h2 {
     font-size: 28px;
   }
@@ -509,7 +516,7 @@ section {
   margin-bottom: 0;
 }
 .about .content .btn-learn-more {
-  font-family: "Raleway", sans-serif;
+  font-family: "Larsseit", sans-serif;
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 1px;
@@ -617,7 +624,7 @@ section {
   color: #fff;
 }
 .cta .cta-btn {
-  font-family: "Raleway", sans-serif;
+  font-family: "Larsseit", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
@@ -666,8 +673,6 @@ section {
   box-shadow: 0px 0px 4px rgba(40, 49, 58, 0.25);
   transform: translateY(-10px);
 
-}
-.services .icon-box:hover .icon{
 }
 .services .icon {
   position: absolute;
@@ -1000,7 +1005,7 @@ section {
   transition: none;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Raleway", sans-serif;
+  font-family: "Larsseit", sans-serif;
   font-weight: 600;
   transition: 0.3s;
 }
@@ -1052,7 +1057,7 @@ section {
   font-weight: 400;
   padding-left: 25px;
   cursor: pointer;
-  color: #bd5102;
+  color: #22a65c;
   transition: 0.3s;
 }
 .faq .faq-list i {
@@ -1073,6 +1078,7 @@ section {
 }
 .faq .faq-list .collapsed:hover {
   color: #22a65c;
+
 }
 .faq .faq-list .collapsed .icon-show {
   display: inline-block;
@@ -1118,7 +1124,6 @@ section {
   border-radius: 50px;
   width: 36px;
   height: 36px;
-  background: rgba(239, 102, 3, 0.8);
   transition: ease-in-out 0.3s;
   color: #fff;
   display: inline-flex;
@@ -1126,7 +1131,8 @@ section {
   justify-content: center;
 }
 .team .member .social a:hover {
-  background: #fc8129;
+  background: #fff;
+  color: #22a65c;
 }
 .team .member .social i {
   font-size: 18px;
@@ -1171,12 +1177,13 @@ section {
   float: left;
   width: 44px;
   height: 44px;
-  background: #ffecde;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
+  border: 1px solid #22a65c;
 }
 .contact .info h4 {
   padding: 0 0 0 60px;
@@ -1262,7 +1269,9 @@ section {
   border-radius: 50px;
 }
 .contact .php-email-form button[type=submit]:hover {
-  background: #fc8129;
+  background: #fff;
+  color: #22a65c;
+  border: 2px solid #22a65c;
 }
 @-webkit-keyframes animate-loading {
   0% {
@@ -1372,8 +1381,8 @@ section {
   transition: 0.3s;
 }
 #footer .social-links a:hover {
-  background: #bd5102;
-  color: #fff;
+  background: #fff;
+  color: #22a65c;
   text-decoration: none;
 }
 #footer .copyright {
