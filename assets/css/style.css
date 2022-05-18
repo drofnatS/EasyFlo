@@ -10,7 +10,7 @@
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'Larsseit-Bold';
-  src: url('Larsseit-Bold.otf');
+  src: url('Larsseit.otf');
 }
 
 @font-face {
@@ -33,7 +33,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Larsseit-Bold", sans-serif;
+  font-family: "Larsseit", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -90,7 +90,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-weight: 700;
   letter-spacing: 1px;
 }
 #header .logo h1 a, #header .logo h1 a:hover {
@@ -111,6 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 */
 .navbar {
   padding: 0;
+  font-family: Larsseit-Bold;
 }
 .navbar ul {
   margin: 0;
@@ -128,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   padding: 5px 15px 7px 15px;
   margin-left: 5px;
-  font-size: 14px;
+  font-size: 16px;
   color: #fff;
   white-space: nowrap;
   transition: 0.3s;
@@ -139,8 +139,14 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
   margin-left: 5px;
 }
-.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+.nav-link:hover{
   background: #22a65c;
+  color: #fff;
+}
+
+.navbar .signup {
+  background: #22a65c;
+  color: #fff;
 }
 .navbar .dropdown ul {
   display: block;
@@ -209,7 +215,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.5s;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
   .mobile-nav-toggle {
     display: block;
   }
@@ -315,7 +321,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   margin-bottom: 30px;
   font-size: 48px;
-  font-weight: 700;
 }
 #hero p {
   width: 80%;
@@ -329,7 +334,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero .btn-get-started {
   font-family: "Larsseit", sans-serif;
-  font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
@@ -456,14 +460,12 @@ section {
 }
 .section-title h2 {
   font-size: 14px;
-  font-weight: 500;
   padding: 0;
   line-height: 1px;
   margin: 0 0 5px 0;
   letter-spacing: 2px;
+  color: #22a65c;
   text-transform: uppercase;
-  color: #aaaaaa;
-  font-family: "Poppins", sans-serif;
 }
 .section-title h2::after {
   content: "";
@@ -477,9 +479,6 @@ section {
   margin: 0;
   margin: 0;
   font-size: 36px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
   color: #28313A;
 }
 
@@ -490,7 +489,6 @@ section {
   padding-top: 80px;
 }
 .about .content h3 {
-  font-weight: 600;
   font-size: 26px;
 }
 .about .content ul {
@@ -517,7 +515,6 @@ section {
 }
 .about .content .btn-learn-more {
   font-family: "Larsseit", sans-serif;
-  font-weight: 600;
   font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
@@ -559,7 +556,6 @@ section {
 }
 .features .nav-link h4 {
   font-size: 18px;
-  font-weight: 600;
   margin: 0;
 }
 .features .nav-link:hover {
@@ -589,7 +585,6 @@ section {
   margin-top: 30px;
 }
 .features .tab-pane h3 {
-  font-weight: 600;
   font-size: 26px;
 }
 .features .tab-pane ul {
@@ -618,7 +613,6 @@ section {
 .cta h3 {
   color: #fff;
   font-size: 28px;
-  font-weight: 700;
 }
 .cta p {
   color: #fff;
@@ -626,7 +620,6 @@ section {
 .cta .cta-btn {
   font-family: "Larsseit", sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
   font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
@@ -684,7 +677,6 @@ section {
 }
 .services .title {
   margin-left: 80px;
-  font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
@@ -707,7 +699,6 @@ section {
   display: inline-block;
   margin: 0 0 10px 10px;
   font-size: 16px;
-  font-weight: 500;
   line-height: 1;
   text-transform: uppercase;
   color: #444444;
@@ -718,7 +709,6 @@ section {
   margin-right: 6px;
   color: #fff;
   font-size: 18px;
-  font-weight: 400;
   transition: all 0.3s ease-in-out;
 }
 .portfolio #portfolio-flters li::after {
@@ -726,7 +716,6 @@ section {
   margin-left: 6px;
   color: #fff;
   font-size: 18px;
-  font-weight: 400;
   transition: all 0.3s ease-in-out;
 }
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
@@ -758,7 +747,6 @@ section {
 .portfolio .portfolio-item .portfolio-info h4 {
   font-size: 18px;
   color: #fff;
-  font-weight: 600;
   color: #fff;
   margin-bottom: 0px;
 }
@@ -836,7 +824,6 @@ section {
 }
 .portfolio-details .portfolio-info h3 {
   font-size: 22px;
-  font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #eee;
@@ -854,7 +841,6 @@ section {
 }
 .portfolio-details .portfolio-description h2 {
   font-size: 26px;
-  font-weight: 700;
   margin-bottom: 20px;
 }
 .portfolio-details .portfolio-description p {
@@ -883,7 +869,6 @@ section {
 }
 .testimonials .testimonial-item h3 {
   font-size: 18px;
-  font-weight: bold;
   margin: 10px 0 5px 0;
   color: #111;
 }
@@ -945,19 +930,15 @@ section {
 
 }
 .pricing h3 {
-  font-weight: 400;
   margin: -20px -20px 25px -20px;
   padding: 30px 15px;
   font-size: 18px;
-  font-weight: 600;
   color: white;
   background: #28313A;
 }
 .pricing h4 {
   font-size: 36px;
   color: #22a65c;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
   margin-bottom: 20px;
 }
 .pricing h4 sup {
@@ -968,7 +949,6 @@ section {
 .pricing h4 span {
   color: #28313A;
   font-size: 16px;
-  font-weight: 300;
 }
 .pricing ul {
   padding: 0;
@@ -1004,9 +984,7 @@ section {
   color: #fff;
   transition: none;
   font-size: 14px;
-  font-weight: 400;
   font-family: "Larsseit", sans-serif;
-  font-weight: 600;
   transition: 0.3s;
 }
 .pricing .btn-buy:hover {
@@ -1051,10 +1029,8 @@ section {
 .faq .faq-list .question {
   display: block;
   position: relative;
-  font-family: #22a65c;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 400;
   padding-left: 25px;
   cursor: pointer;
   color: #22a65c;
@@ -1142,7 +1118,6 @@ section {
   padding: 25px 15px;
 }
 .team .member .member-info h4 {
-  font-weight: 700;
   margin-bottom: 5px;
   font-size: 18px;
   color: #28313A;
@@ -1150,7 +1125,6 @@ section {
 .team .member .member-info span {
   display: block;
   font-size: 13px;
-  font-weight: 400;
   color: #aaaaaa;
 }
 .team .member .member-info p {
@@ -1188,7 +1162,6 @@ section {
 .contact .info h4 {
   padding: 0 0 0 60px;
   font-size: 22px;
-  font-weight: 600;
   margin-bottom: 5px;
   color: #28313A;
 }
@@ -1196,10 +1169,11 @@ section {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #555974;
+  color: #22a65c;
 }
 .contact .info .email, .contact .info .phone {
   margin-top: 40px;
+  color: #22a65c;
 }
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
   background: #22a65c;
@@ -1218,7 +1192,6 @@ section {
   background: #ed3c0d;
   text-align: left;
   padding: 15px;
-  font-weight: 600;
 }
 .contact .php-email-form .error-message br + br {
   margin-top: 25px;
@@ -1229,7 +1202,6 @@ section {
   background: #18d26e;
   text-align: center;
   padding: 15px;
-  font-weight: 600;
 }
 .contact .php-email-form .loading {
   display: none;
@@ -1301,7 +1273,6 @@ section {
 }
 .breadcrumbs h2 {
   font-size: 28px;
-  font-weight: 400;
   margin: 0;
 }
 .breadcrumbs ol {
@@ -1342,7 +1313,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #14151c;
+  background: #28313A;
   color: #fff;
   font-size: 14px;
   text-align: center;
@@ -1350,16 +1321,13 @@ section {
 }
 #footer h3 {
   font-size: 36px;
-  font-weight: 700;
   color: #fff;
   position: relative;
-  font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0 0 15px 0;
 }
 #footer p {
-  font-size: 15;
-  font-style: italic;
+  font-size: 32px;
   padding: 0;
   margin: 0 0 40px 0;
 }
