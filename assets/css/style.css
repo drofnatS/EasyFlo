@@ -117,8 +117,11 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 .navbar .gap {
-  padding-right: 100px;
+  width: 100px;
   }
+  .navbar .gap:hover {
+    background-color: #28313A;
+    }
 .navbar a, .navbar a:focus {
   display: flex;
   align-items: center;
@@ -191,14 +194,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 100%;
   visibility: visible;
 }
-@media (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
-    left: -90%;
-  }
-  .navbar .dropdown .dropdown:hover > ul {
-    left: -100%;
-  }
-}
+
 
 /**
 * Mobile Navigation 
@@ -212,7 +208,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.5s;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   .mobile-nav-toggle {
     display: block;
   }
