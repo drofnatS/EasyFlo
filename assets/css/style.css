@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Disable AOS delay on mobile
 --------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1400px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
@@ -212,7 +212,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.5s;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
   .mobile-nav-toggle {
     display: block;
   }
